@@ -1,5 +1,5 @@
 .DS_Store
-.idea
+/.idea
 dist/electron/*
 dist/web/*
 build/*
