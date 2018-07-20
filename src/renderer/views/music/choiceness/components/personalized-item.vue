@@ -1,9 +1,9 @@
 <template>
-    <div class="personalized-item">
+    <div class="personalized-item" @click="itemClick">
         <div class="cover">
             <img :src="item.picUrl" />
             <div class="bg hover-bg">
-                <i class="iconfont icon-iconset0481"></i>
+                <i class="iconfont icon-iconset0481" @click="playClick" onClick="event.cancelBubble = true"></i>
             </div>
             <div class="play-count">
                 <i class="el-icon-service"></i>
@@ -13,7 +13,6 @@
         <div class="info">
             <div class="title hover-color">{{item.name}}</div>
         </div>
-
     </div>
 </template>
 
@@ -21,6 +20,14 @@
     export default {
         props: {
             item: Object
+        },
+        methods: {
+            itemClick() {
+                this.$router.push({ name: 'playlist-detail', query: { id: this.item.id } })
+            },
+            playClick(){
+
+            }
         }
     }
 </script>

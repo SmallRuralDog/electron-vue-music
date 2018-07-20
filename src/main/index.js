@@ -1,6 +1,7 @@
 import {
     app,
-    BrowserWindow
+    BrowserWindow,
+    ipcMain
 } from 'electron'
 
 /**
@@ -31,10 +32,10 @@ function createWindow() {
         skipTaskbar: false,
         transparent: false,
         title:"小土狗音乐",
+        autoHideMenuBar:true,
         x:0,
         y:0
-    })
-
+    });
 
     mainWindow.loadURL(winURL)
 
@@ -55,6 +56,13 @@ app.on('activate', () => {
     if (mainWindow === null) {
         createWindow()
     }
+})
+
+ipcMain.on('close',e=>{
+    mainWindow.close()
+})
+ipcMain.on('minimize',e=>{
+    mainWindow.minimize()
 })
 
 /**

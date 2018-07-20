@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="btns">
-                    <el-button type="danger" :disabled="!disabled" @click="login" :loading="loading">立即登录</el-button>
+                    <el-button type="danger" :disabled="!disabled" @click="loginClick" :loading="loading">立即登录</el-button>
                 </div>
             </div>
         </div>
@@ -41,11 +41,11 @@ export default {
         })
     },
     methods: {
-        login() {
-            this.loading = true
+        loginClick() {
+            this.loading = true;
             login(this.phone, this.password).then(res => {
-                this.loading = false
-                this.dialogVisible = false
+                this.loading = false;
+                this.dialogVisible = false;
                 this.$store.dispatch('SET_LOGIN', res)
 
             }).catch(res => {
@@ -55,7 +55,7 @@ export default {
     },
     computed: {
         disabled() {
-            return this.phone.length == 11 && this.password.length > 1
+            return this.phone.length === 11 && this.password.length > 1
         }
     }
 }

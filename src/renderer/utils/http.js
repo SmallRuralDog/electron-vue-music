@@ -4,7 +4,8 @@ import {
 } from 'element-ui';
 // 创建axios实例
 const service = axios.create({
-    baseURL: 'http://localhost:3000',
+    withCredentials:true,
+    baseURL: 'http://192.168.11.100:3000',
     timeout: 15000 // 请求超时时间
 })
 
@@ -25,7 +26,7 @@ service.interceptors.response.use(
                 default:
                     console.log(response.data.msg);
                     Message({
-                        message: response.data.msg,
+                        message: response.data.msg || '未知错误',
                         type: 'error',
                         center: true
                     })

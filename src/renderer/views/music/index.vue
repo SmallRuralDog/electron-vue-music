@@ -11,61 +11,62 @@
         </el-tabs>
         <div class="music-body">
             <transition name="el-fade-in-linear">
-            <choiceness v-if="activeName==='choiceness'" />
+                <choiceness v-if="activeName==='choiceness'" />
             </transition>
         </div>
     </div>
 </template>
 <script>
-import choiceness from './choiceness'
-export default {
-    components: {
-        choiceness
-    },
-    data() {
-        return {
-            activeName: 'choiceness'
-        }
-    },
-    mounted () {
-    },
-    methods: {
-        handleClick() {
+    import choiceness from './choiceness'
 
+    export default {
+        components: {
+            choiceness
+        },
+        data() {
+            return {
+                activeName: 'choiceness'
+            }
+        },
+        mounted() {
+        },
+        methods: {
+            handleClick() {
+
+            }
         }
     }
-}
 </script>
 <style lang="scss" scoped>
-.music-index {
-  display: flex;
-  overflow: hidden;
-  flex: 1;
-  flex-direction: column;
-  /deep/ .el-tabs {
-    height: 40px;
-    background: #fafafa;
-    .el-tabs__header {
-      padding: 0;
-      margin: 0;
+    .music-index {
+        display: flex;
+        overflow: hidden;
+        flex: 1;
+        flex-direction: column;
+        /deep/ .el-tabs {
+            height: 40px;
+            background: #fafafa;
+            .el-tabs__header {
+                padding: 0;
+                margin: 0;
+            }
+            .el-tabs__nav-scroll {
+                display: flex;
+                justify-content: center;
+                padding: 0;
+            }
+            .el-tabs__nav-wrap::after {
+                display: none;
+            }
+            .el-tabs__item {
+                font-size: 14px;
+            }
+        }
+        .music-body {
+            background: #f0f0f0;
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+        }
     }
-    .el-tabs__nav-scroll {
-      display: flex;
-      justify-content: center;
-      padding: 0;
-    }
-    .el-tabs__nav-wrap::after {
-      display: none;
-    }
-    .el-tabs__item {
-      font-size: 14px;
-    }
-  }
-  .music-body {
-    background: #f0f0f0;
-    flex: 1;
-    overflow: hidden;
-    display: flex;
-  }
-}
 </style>

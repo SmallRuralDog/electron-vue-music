@@ -1,30 +1,39 @@
 <template>
     <div>
-        <el-container>
-            <el-aside width="230px" class="aside">
-                <aside-view />
-            </el-aside>
-            <el-container class="container">
-                <el-header class="header" height="40px" style="-webkit-app-region: drag"></el-header>
-                <el-main class="main">
-                    <keep-alive>
-                        <router-view></router-view>
-                    </keep-alive>
-
-                </el-main>
-                <el-footer class="footer" height="60px"></el-footer>
+        <el-container class="container">
+            <el-container>
+                <el-aside width="230px" class="aside">
+                    <aside-view />
+                </el-aside>
+                <el-container>
+                    <el-header class="header" height="50px" style="-webkit-app-region: drag">
+                        <header-view height="50px" />
+                    </el-header>
+                    <el-main class="main">
+                        <keep-alive>
+                            <router-view></router-view>
+                        </keep-alive>
+                    </el-main>
+                </el-container>
             </el-container>
+            <el-footer class="footer" height="70px">
+                <footer-view height="70px" />
+            </el-footer>
         </el-container>
         <login-view />
     </div>
 </template>
 <script>
     import AsideView from '../components/Aside/'
+    import HeaderView from '../components/Header/'
+    import FooterView from '../components/Footer/'
     import LoginView from '../components/Login/'
 
     export default {
         components: {
             AsideView,
+            HeaderView,
+            FooterView,
             LoginView
         }
     }
@@ -34,12 +43,15 @@
         height: 100vh;
         background: linear-gradient(to bottom, #efefef, #efefef);
     }
-    .container{
+
+    .container {
         height: 100vh;
     }
+
     .header {
         background: #fafafa;
     }
+
     .main {
         padding: 0;
         margin: 0;
@@ -48,7 +60,9 @@
         flex: 1;
         flex-shrink: 0;
     }
+
     .footer {
         background: #f7f7f7;
+        padding: 0;
     }
 </style>
