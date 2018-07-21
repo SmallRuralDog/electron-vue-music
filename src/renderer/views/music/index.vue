@@ -3,7 +3,7 @@
         <el-tabs v-model="activeName" @tab-click="handleClick">
             <el-tab-pane label="精选" name="choiceness"></el-tab-pane>
             <el-tab-pane label="歌手" name="second"></el-tab-pane>
-            <el-tab-pane label="排行" name="third"></el-tab-pane>
+            <el-tab-pane label="排行" name="toplist"></el-tab-pane>
             <el-tab-pane label="电台" name="fourth"></el-tab-pane>
             <el-tab-pane label="分类歌单" name="playlist"></el-tab-pane>
             <el-tab-pane label="有声" name="ys"></el-tab-pane>
@@ -13,6 +13,7 @@
             <transition name="el-fade-in-linear">
                 <choiceness v-if="activeName==='choiceness'" />
                 <playlist v-if="activeName==='playlist'" />
+                <toplist v-if="activeName==='toplist'" />
             </transition>
         </div>
     </div>
@@ -20,11 +21,12 @@
 <script>
     import choiceness from './choiceness'
     import playlist from './playlist'
-
+    import toplist from './toplist'
     export default {
         components: {
             choiceness,
-            playlist
+            playlist,
+            toplist,
         },
         data() {
             return {

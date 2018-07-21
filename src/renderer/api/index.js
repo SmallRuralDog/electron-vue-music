@@ -29,4 +29,7 @@ export function like(id) {
     return http.get('/like?id=' + id)
 }
 
+export function toplist(idx) {
+	return http.get('/top/list?idx=' + idx)
+}
 
