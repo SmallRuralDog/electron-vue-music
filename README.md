@@ -2,12 +2,7 @@
 
 > 一个基于 electron-vue 开发的音乐播放器 (持续更新中..欢迎star)
 
-#### 
-```shell
-$ https://github.com/SmallRuralDog/electron-vue-music.git
-$ cd electron-vue-music
-$ npm install
-```
+
 
 #### 运行
 

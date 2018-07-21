@@ -4,7 +4,7 @@ import {
 } from 'element-ui';
 // 创建axios实例
 const service = axios.create({
-    withCredentials:true,
+    withCredentials: true,
     baseURL: 'http://localhost:3000',
     timeout: 15000 // 请求超时时间
 })
@@ -19,7 +19,7 @@ service.interceptors.request.use(config => {
 // respone拦截器
 service.interceptors.response.use(
     response => {
-        if (response.data.code != 200) {
+        if (response.data.code !== 200) {
             switch (response.data.code) {
                 case 401: // 用户未登录
                     break;
