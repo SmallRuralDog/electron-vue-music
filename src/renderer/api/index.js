@@ -17,6 +17,14 @@ export function getPlaylistDetail(id) {
     return http.get('/playlist/detail?id=' + id)
 }
 
+export function getPlaylistHot() {
+    return http.get('/playlist/hot')
+}
+
+export function getTopPlaylistHighquality(cat = '全部', limit = 30) {
+    return http.get('/top/playlist/highquality?cat=' + cat + "&limit=" + limit)
+}
+
 export function like(id) {
     return http.get('/like?id=' + id)
 }
