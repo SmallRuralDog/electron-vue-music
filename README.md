@@ -1,6 +1,6 @@
 # 土狗音乐播放器
 
-> 一个基于 electron-vue 开发的音乐播放器
+> 一个基于 electron-vue 开发的音乐播放器 (持续更新中..欢迎start)
 
 #### Build Setup
 
@@ -17,4 +17,4 @@ npm run build
 
 ```
 
-![](https://i.loli.net/2018/07/19/5b5069864a8b4.png)
+![](https://i.loli.net/2018/07/21/5b5286269fc40.png)
