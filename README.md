@@ -1,6 +1,6 @@
 # 土狗音乐播放器
 
-> 一个基于 electron-vue 开发的音乐播放器 (持续更新中..欢迎start)
+> 一个基于 electron-vue 开发的音乐播放器 (持续更新中..欢迎star)
 
 #### Build Setup
 
