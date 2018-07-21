@@ -27,7 +27,7 @@
 </template>
 
 <script>
-    const { BrowserWindow } = require('electron')
+    const {BrowserWindow} = require('electron')
     export default {
         props: {
             height: {
@@ -43,6 +43,8 @@
                     type: 'warning'
                 }).then(() => {
                     this.$electron.ipcRenderer.send('close')
+                }).catch(() => {
+
                 })
             },
             minimize() {

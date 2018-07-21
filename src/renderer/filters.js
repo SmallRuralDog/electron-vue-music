@@ -15,9 +15,16 @@ const filters = {
             return y;
         },
         formatDuring(mss) {
-            var minutes = parseInt(mss / 1000 / 60);
-            var seconds = (mss % (1000 * 60)) / 1000;
-            return minutes >= 10 ? minutes : '0' + minutes + ":" + seconds.toFixed(0);
+            if (mss) {
+                var minutes = parseInt(mss / 1000 / 60);
+                var seconds = parseInt((mss % (1000 * 60)) / 1000);
+
+                seconds = seconds > 9 ? seconds : '0' + seconds;
+                return minutes >= 10 ? minutes : '0' + minutes + ":" + seconds;
+            } else {
+                return '00:00'
+            }
+
         }
     }
 ;

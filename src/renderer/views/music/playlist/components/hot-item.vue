@@ -1,7 +1,7 @@
 <template>
     <div class="hot-item" @click="itemClick">
         <div class="cover">
-            <img :src="item.coverImgUrl" />
+            <img :src="item.coverImgUrl"/>
             <div class="bg hover-bg">
                 <i class="iconfont icon-iconset0481" @click="playClick" onClick="event.cancelBubble = true"></i>
             </div>
@@ -24,10 +24,10 @@
         },
         methods: {
             itemClick() {
-                this.$router.push({ name: 'playlist-detail', query: { id: this.item.id } })
+                this.$router.push({name: 'playlist-detail', query: {id: this.item.id}})
             },
-            playClick(){
-
+            playClick() {
+                this.$store.dispatch('playPlaylist', this.item.id)
             }
         }
     }
@@ -98,7 +98,7 @@
             .title:hover {
                 color: #31c27c;
             }
-            .nickname{
+            .nickname {
                 font-size: 12px;
                 color: #666;
                 line-height: 20px;

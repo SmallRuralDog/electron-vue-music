@@ -26,7 +26,7 @@
                 this.$router.push({ name: 'playlist-detail', query: { id: this.item.id } })
             },
             playClick(){
-
+                this.$store.dispatch('playPlaylist',this.item.id)
             }
         }
     }

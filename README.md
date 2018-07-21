@@ -42,7 +42,7 @@ npm run build
 ## 安装
 
 ```shell
-$ git clone git@github.com:Binaryify/NeteaseCloudMusicApi.git
+$ git clone https://github.com/Binaryify/NeteaseCloudMusicApi.git
 $ npm install
 ```
 

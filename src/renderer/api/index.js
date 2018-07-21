@@ -30,6 +30,14 @@ export function like(id) {
 }
 
 export function toplist(idx) {
-	return http.get('/top/list?idx=' + idx)
+    return http.get('/top/list?idx=' + idx)
+}
+
+export function getSongDetail(ids) {
+    return http.get('/song/detail?ids=' + ids)
+}
+
+export function getMusicUrl(id, br = 999000) {
+    return http.get('/music/url?id=' + id + '&br=' + br)
 }
 
