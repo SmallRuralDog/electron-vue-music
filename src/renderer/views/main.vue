@@ -40,7 +40,8 @@
 </script>
 <style lang="scss" scoped>
     .aside {
-        height: 100vh;
+        display: flex;
+        flex-direction: column;
         background: linear-gradient(to bottom, #efefef, #efefef);
     }
 

@@ -28,8 +28,7 @@
     .toplist {
         padding: 0 30px;
         box-sizing: border-box;
-        display: flex;
-        align-items: center;
+
     }
 
     .title {

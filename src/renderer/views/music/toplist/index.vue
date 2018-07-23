@@ -20,7 +20,7 @@
     .scroll-page {
         overflow: hidden;
         background:#fafafa;
-        /*box-sizing:box-border;*/
+
         /deep/ .el-scrollbar__wrap {
             overflow-x: hidden;
         }

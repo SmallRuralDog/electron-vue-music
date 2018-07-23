@@ -33,6 +33,13 @@ export function toplist(idx) {
     return http.get('/top/list?idx=' + idx)
 }
 
+export function singerlist(cat,offset) {
+    if(cat==0){
+        return http.get('/top/artists?offset=0')
+    }
+    return http.get('/artist/list?cat=' + cat+'&offset='+offset)
+}
+
 export function getSongDetail(ids) {
     return http.get('/song/detail?ids=' + ids)
 }
