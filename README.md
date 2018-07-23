@@ -72,13 +72,8 @@ $ set PORT=4000 && node app.js
 
 # UI
 
-
-![](https://i.loli.net/2018/07/23/5b559099a6251.png)
-
-![](https://i.loli.net/2018/07/23/5b55909a0f086.png)
-
-![](https://i.loli.net/2018/07/23/5b5590994004a.png)
-
-![](https://i.loli.net/2018/07/23/5b559098e7830.png)
-
-![](https://i.loli.net/2018/07/23/5b5590989ad28.png)
+![](https://i.loli.net/2018/07/23/5b55923480eac.png)
+![](https://i.loli.net/2018/07/23/5b5592342f330.png)
+![](https://i.loli.net/2018/07/23/5b559233da730.png)
+![](https://i.loli.net/2018/07/23/5b5592333d294.png)
+![](https://i.loli.net/2018/07/23/5b5592337750c.png)
