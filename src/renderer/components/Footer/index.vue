@@ -18,6 +18,7 @@
 
 <style lang="scss" scoped>
 .footer-view{
-
+    position: relative;
+    z-index: 200;
 }
 </style>

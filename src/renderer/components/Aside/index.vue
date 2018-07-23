@@ -1,5 +1,5 @@
 <template>
-    <div class="axc">
+    <div class="wrap">
         <user-info/>
         <menus/>
     </div>
@@ -15,7 +15,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-    .axc{
+    .wrap{
         flex: 1;
         display: flex;flex-direction: column;
     }

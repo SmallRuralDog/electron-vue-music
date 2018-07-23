@@ -1,11 +1,11 @@
 <template>
     <div>
         <el-container class="container">
-            <el-container>
+            <el-container style="position: relative;">
                 <el-aside width="230px" class="aside">
                     <aside-view />
                 </el-aside>
-                <el-container>
+                <el-container >
                     <el-header class="header" height="50px" style="-webkit-app-region: drag">
                         <header-view height="50px" />
                     </el-header>
@@ -13,8 +13,10 @@
                         <keep-alive>
                             <router-view></router-view>
                         </keep-alive>
+
                     </el-main>
                 </el-container>
+                <playlist/>
             </el-container>
             <el-footer class="footer" height="70px">
                 <footer-view height="70px" />
@@ -28,13 +30,15 @@
     import HeaderView from '../components/Header/'
     import FooterView from '../components/Footer/'
     import LoginView from '../components/Login/'
+    import Playlist from '../components/Playlist/'
 
     export default {
         components: {
             AsideView,
             HeaderView,
             FooterView,
-            LoginView
+            LoginView,
+            Playlist
         }
     }
 </script>

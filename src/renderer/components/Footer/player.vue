@@ -76,7 +76,7 @@
             <el-button type="text">
                 <i class="iconfont icon-shengyin"></i>
             </el-button>
-            <el-button type="text">
+            <el-button type="text" @click.native="showPlaylist">
                 <i class="iconfont icon-liebiao"></i>
             </el-button>
         </div>
@@ -222,7 +222,11 @@
                 if (this.after_song) {
                     this.$store.dispatch('playMusic', this.after_song.id)
                 }
-            }
+            },
+            // 弹出播放列表
+            showPlaylist(){
+                this.$bus.$emit('showPlaylist')
+            },
         }
     }
 </script>
