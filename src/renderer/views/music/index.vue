@@ -4,7 +4,7 @@
             <el-tab-pane label="精选" name="choiceness"></el-tab-pane>
             <el-tab-pane label="歌手" name="singer"></el-tab-pane>
             <el-tab-pane label="排行" name="toplist"></el-tab-pane>
-            <el-tab-pane label="电台" name="fourth"></el-tab-pane>
+            <el-tab-pane label="电台" name="dj"></el-tab-pane>
             <el-tab-pane label="分类歌单" name="playlist"></el-tab-pane>
             <el-tab-pane label="有声" name="ys"></el-tab-pane>
             <el-tab-pane label="数字专辑" name="szzj"></el-tab-pane>
@@ -15,6 +15,7 @@
                 <playlist v-if="activeName==='playlist'" />
                 <toplist v-if="activeName==='toplist'" />
                 <singer v-if="activeName==='singer'" />
+                <dj v-if="activeName==='dj'" />
             </transition>
         </div>
     </div>
@@ -24,12 +25,14 @@
     import playlist from './playlist'
     import toplist from './toplist'
     import singer from './singer'
+    import dj from './dj'
     export default {
         components: {
             choiceness,
             playlist,
             toplist,
             singer,
+            dj,
         },
         data() {
             return {

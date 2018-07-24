@@ -48,3 +48,14 @@ export function getMusicUrl(id, br = 999000) {
     return http.get('/music/url?id=' + id + '&br=' + br)
 }
 
+export function djlist(catid) {
+    if(catid==0){
+        return http.get('/dj/recommend')
+    }else{
+        return http.get('/dj/recommend/type?type='+catid)
+    }
+
+}
+export function djcat() {
+    return http.get('/dj/catelist')
+}
