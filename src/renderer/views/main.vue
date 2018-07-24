@@ -1,6 +1,6 @@
 <template>
     <div>
-        <el-container class="container">
+        <el-container class="container" id="main">
             <el-container style="position: relative;">
                 <el-aside width="230px" class="aside">
                     <aside-view />
@@ -16,7 +16,7 @@
 
                     </el-main>
                 </el-container>
-                <playlist/>
+                <!--<playlist/>-->
             </el-container>
             <el-footer class="footer" height="70px">
                 <footer-view height="70px" />

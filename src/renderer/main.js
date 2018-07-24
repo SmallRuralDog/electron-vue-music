@@ -17,6 +17,19 @@ Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
+// 定义全局点击函数
+Vue.prototype.globalClick = function (callback) {
+    document.getElementById('main').onclick = function () {
+        callback();
+    };
+};
+// 定义全局点击函数
+Vue.prototype.playlistClick = function (callback) {
+    document.getElementById('playlist').onclick = function () {
+        callback();
+    };
+};
+
 Vue.prototype.$bus = new Vue()
 
 /* eslint-disable no-new */

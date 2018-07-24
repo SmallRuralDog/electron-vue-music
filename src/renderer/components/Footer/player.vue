@@ -76,15 +76,27 @@
             <el-button type="text">
                 <i class="iconfont icon-shengyin"></i>
             </el-button>
-            <el-button type="text" @click.native="showPlaylist">
-                <i class="iconfont icon-liebiao"></i>
-            </el-button>
+            <el-popover
+                    placement="top-start"
+                    width="300"
+                    popper-class="ls"
+                    trigger="click">
+                <playlist/>
+                <el-button type="text" @click.native="showPlaylist" slot="reference">
+                    <i class="iconfont icon-liebiao"></i>
+                </el-button>
+            </el-popover>
         </div>
     </div>
 </template>
 
 <script>
+    import playlist from '../Playlist'
+
     export default {
+        components: {
+            playlist
+        },
         data() {
             return {
                 audio: null,
@@ -224,7 +236,7 @@
                 }
             },
             // 弹出播放列表
-            showPlaylist(){
+            showPlaylist() {
                 this.$bus.$emit('showPlaylist')
             },
         }
