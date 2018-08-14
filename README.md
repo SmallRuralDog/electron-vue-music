@@ -15,7 +15,7 @@ npm install
 # 运行开发模式
 npm run dev
 
-# 打包exe安装文件 
+# 打包安装文件 
 npm run build
 
 ```
