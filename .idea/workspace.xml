@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8026318-fc54-4d46-a1f1-bc7205707931" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/routers/banner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/routers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d8026318-fc54-4d46-a1f1-bc7205707931" name="Default" comment="集成serve到客户端">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/utils/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/utils/http.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,7 +44,7 @@
           <entry key="js" value="892" />
           <entry key="json" value="38" />
           <entry key="md" value="65" />
-          <entry key="txt" value="32" />
+          <entry key="txt" value="44" />
           <entry key="vue" value="5" />
         </counts>
       </usages-collector>
@@ -60,7 +53,7 @@
           <entry key="JSON" value="38" />
           <entry key="JavaScript" value="892" />
           <entry key="Markdown" value="65" />
-          <entry key="PLAIN_TEXT" value="32" />
+          <entry key="PLAIN_TEXT" value="44" />
           <entry key="Vue.js" value="5" />
         </counts>
       </usages-collector>
@@ -72,8 +65,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="436">
-                <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <first_editor relative-caret-position="323">
+                <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -434,7 +427,7 @@
       <workItem from="1532142961174" duration="4261000" />
       <workItem from="1532307802371" duration="8000" />
       <workItem from="1532422629573" duration="1060000" />
-      <workItem from="1534208772781" duration="13770000" />
+      <workItem from="1534208772781" duration="14120000" />
     </task>
     <task id="LOCAL-00001" summary="rm">
       <created>1531996419320</created>
@@ -534,11 +527,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534209449109</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="集成serve到客户端">
+      <created>1534228303507</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1534228303507</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56976000" />
+    <option name="totallyTimeSpent" value="57326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="751" y="0" width="1811" height="1058" extended-state="0" />
@@ -574,7 +574,8 @@
     <MESSAGE value="rm" />
     <MESSAGE value="分类歌单" />
     <MESSAGE value="修复 playlist  vuex大小写错误问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复 playlist  vuex大小写错误问题" />
+    <MESSAGE value="集成serve到客户端" />
+    <option name="LAST_COMMIT_MESSAGE" value="集成serve到客户端" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/router/program_recommend.js">
@@ -930,8 +931,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="436">
-            <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <first_editor relative-caret-position="323">
+            <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
