@@ -1,5 +1,5 @@
 <template>
-    <div class="playlist" :class="{'active':showPlaylist==true}" ref="playlist" id="playlist">
+    <div class="playlist" :class="{'active':showPlaylist===true}" ref="playlist" id="playlist">
         <div class="playlist-view">
             <div class="top">
                 <div class="title">播放队列</div>
@@ -10,17 +10,17 @@
                 </div>
             </div>
             <el-scrollbar class="song-view scroll-page">
-                <div class="song-item"  v-for="(item,index) in list" :key="index" :class="{'active':item.id==song.id}">
+                <div class="song-item"  v-for="(item,index) in list" :key="index" :class="{'active':item.id===song.id}">
                     <div class="name">
                         {{item.name}}
                         <img class="tag" src="../../assets/images/sq.png"/>
                         <img v-if="item.mv>0" class="tag" src="../../assets/images/mv.png"/>
-                        <div class="spin" v-show="item.id==song.id"><i class="iconfont icon-yinleren"></i></div>
+                        <div class="spin" v-show="item.id===song.id"><i class="iconfont icon-yinleren"></i></div>
                     </div>
                     <div class="info" ><div class="singer">{{item.ar[0].name}}</div><div class="time">{{item.dt|formatDuring}}</div></div>
 
                     <div class="icon">
-                        <i class="iconfont icon-bofangsanjiaoxing" :class="{'icon-zanting1':item.id==song.id}" @click="play(item)"></i>
+                        <i class="iconfont icon-bofangsanjiaoxing" :class="{'icon-zanting1':item.id===song.id}" @click="play(item)"></i>
                         <i class="iconfont icon-shoucang"></i>
                     </div>
 
@@ -33,7 +33,7 @@
     </div>
 </template>
 <script>
-import {mapState} from 'Vuex'
+import {mapState} from 'vuex'
     export default {
         components: {
 
@@ -271,7 +271,7 @@ import {mapState} from 'Vuex'
             z-index: 1;
         }
     }
-    
+
     .song-item:hover{
         background-color: #f8f8f8;
         .name{
