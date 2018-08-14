@@ -51,8 +51,13 @@
     }
   },
   "dependencies": {
+    "apicache": "^1.2.3",
     "axios": "^0.16.1",
+    "big-integer": "^1.6.34",
+    "child_process": "^1.0.2",
     "element-ui": "^2.4.4",
+    "express": "^4.16.3",
+    "request": "^2.88.0",
     "url-parse": "^1.4.3",
     "vue": "^2.3.3",
     "vue-electron": "^1.0.6",
