@@ -111,20 +111,25 @@
         },
         watch: {
             is_play(val) {
-                this.$nextTick(() => {
-                    this.audio = this.$refs['audio'];
-                    if (val) {
-                        this.audio.play();
-                        this.max_time = this.audio.duration;
-                        this.getPlayTime();
-                        this.audio.addEventListener('ended', () => {
-                            this.playEnded();
-                        })
-                    } else {
-                        this.audio.pause();
-                        clearInterval(this.interval)
-                    }
-                })
+                try {
+                    this.$nextTick(() => {
+                        this.audio = this.$refs['audio'];
+                        if (val) {
+                            this.audio.play();
+                            this.max_time = this.audio.duration;
+                            this.getPlayTime();
+                            this.audio.addEventListener('ended', () => {
+                                this.playEnded();
+                            })
+                        } else {
+                            this.audio.pause();
+                            clearInterval(this.interval)
+                        }
+                    })
+                }catch (e) {
+                    console.log('play error')
+                }
+
             },
             currentTime(val) {
                 this.play_time = val
