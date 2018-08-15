@@ -117,7 +117,6 @@
             },
             playAll(){
                 this.$store.dispatch('playPlaylist',this.playlist.id)
-
             }
         }
     }

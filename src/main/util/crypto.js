@@ -65,5 +65,6 @@ function Encrypt(obj) {
 }
 
 export {
+    crypto,
     Encrypt
 }

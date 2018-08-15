@@ -1,3 +1,5 @@
+const crypto = require("crypto");
+
 var express = require('express');
 var router = express.Router();
 import { createWebAPIRequest, request } from '../util/util';
@@ -719,7 +721,7 @@ router.get('/login', (req, res, next) => {
         err => res.status(502).send('fetch error')
     )
 });
-router.get('/logincellphone', (req, res, next) => {
+router.get('/login/cellphone', (req, res, next) => {
     const phone = req.query.phone;
     const cookie = req.get("Cookie") ? req.get("Cookie") : "";
     const md5sum = crypto.createHash("md5");

@@ -1,5 +1,4 @@
-import locs from '../../utils/locs'
-import {getMusicUrl, getPlaylistDetail, getSongDetail} from "../../api";
+import { getMusicUrl, getPlaylistDetail, getSongDetail } from "../../api";
 
 export default {
     state: {
@@ -20,16 +19,16 @@ export default {
         },
     },
     actions: {
-        playMusic({commit, state}, id) {
-            commit('SET_PLAYER_DATA', {is_play: false, currentTime: 0});
+        playMusic({ commit, state }, id) {
+            commit('SET_PLAYER_DATA', { is_play: false, currentTime: 0 });
             getSongDetail(id).then(res => {
-                commit('SET_PLAYER_DATA', {song: res.songs[0]})
+                commit('SET_PLAYER_DATA', { song: res.songs[0] })
             });
             getMusicUrl(id).then(res => {
                 commit('SET_PLAYER_DATA', {music_urls: res.data, is_play: true})
             })
         },
-        playPlaylist({commit, state,dispatch}, id) {
+        playPlaylist({ commit, state, dispatch }, id) {
             getPlaylistDetail(id).then(res => {
                 commit('SET_PLAYER_LIST', res.playlist.tracks);
                 dispatch('playMusic', res.playlist.tracks[0].id)

@@ -6,7 +6,6 @@ import {
 const service = axios.create({
     withCredentials: true,
     baseURL: 'http://localhost:3000',
-    //baseURL: 'http://192.168.11.100:3000',
     timeout: 15000 // 请求超时时间
 })
 
