@@ -785,7 +785,7 @@ router.get('/lyric', (req, res, next) => {
         err => res.status(502).send("fetch error")
     );
 });
-router.get('/musicurl', (req, res, next) => {
+router.get('/music/url', (req, res, next) => {
     const id = req.query.id;
     const br = req.query.br || 999000;
     const data = {
