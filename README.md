@@ -39,10 +39,8 @@ npm run build
 ![](https://i.loli.net/2018/07/23/5b5592333d294.png)
 ![](https://i.loli.net/2018/07/23/5b5592337750c.png)
 
-### 支持我
+### 关注我
 
-如果你觉得项目对你有帮助，让你少加班，让你能更早的回家陪女友或者打游戏，能让你更快速的挣到钱，那么请支持我，让我能继续将项目做好，做下去！
+![](http://makefriends.bs2dl.yy.com/Coder_290.jpeg)
 
-![](https://i.loli.net/2018/08/15/5b73817f00822.png)
-
-个人微信 thinktb
+头条扫一扫  干货随便找
