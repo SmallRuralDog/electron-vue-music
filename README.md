@@ -39,8 +39,8 @@ npm run build
 ![](https://i.loli.net/2018/07/23/5b5592333d294.png)
 ![](https://i.loli.net/2018/07/23/5b5592337750c.png)
 
-### 关注我
+### 关注我的头条号
 
-![](http://makefriends.bs2dl.yy.com/Coder_290.jpeg)
+![](http://makefriends.bs2dl.yy.com/Coder.jpeg)
 
 头条扫一扫  干货随便找
