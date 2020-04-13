@@ -39,8 +39,7 @@ npm run build
 ![](https://i.loli.net/2018/07/23/5b5592333d294.png)
 ![](https://i.loli.net/2018/07/23/5b5592337750c.png)
 
-### 关注我的头条号
+# 支持
 
-![](http://makefriends.bs2dl.yy.com/Coder.jpeg)
-
-头条扫一扫  干货随便找
+如果你觉得 electron-vue-music 节省了你的开发时间，让你少加班，让你能更早的回家陪女友或者打游戏，能让你更快速的挣到钱，那么请支持我，让我能继续的将 electron-vue-music 做好，做下去！
+![](https://raw.githubusercontent.com/SmallRuralDog/laravel-vue-admin/master/docs/README.assets/image-20200313112129545.png)
