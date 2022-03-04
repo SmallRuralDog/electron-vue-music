@@ -1,6 +1,10 @@
-# 音乐播放器
+# 当前项目已停止更新，基于VUE3+TS的版本正在开发中，项目地址
+### >>>[VUE3-MUSIC](https://github.com/SmallRuralDog/vue3-music)<<<
+
+## 音乐播放器
 
 > 一个基于 electron-vue 开发的音乐播放器
+
 
 
 ##### 运行
