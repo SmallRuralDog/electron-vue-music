@@ -1,4 +1,4 @@
-# 当前项目已停止更新，基于VUE3+TS的版本正在开发中，项目地址
+# 当前项目已停止更新，基于VUE3+TS的版本已开源，项目地址
 ### >>>[VUE3-MUSIC](https://github.com/SmallRuralDog/vue3-music)<<<
 
 ## 音乐播放器
